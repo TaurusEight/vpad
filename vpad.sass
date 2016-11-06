@@ -1,0 +1,106 @@
+
+// Time-stamp: <2016-11-05 19:19:20 daniel>  -*- mode: sass; -*-
+// Written by Daniel Mendyke [archadous@gmail.com]
+
+
+// Variables
+$lighterBackground: #7b7d7d
+$darkBackground: #4d5656
+$frameFonts: #ecf0f1
+$darkFrame: #b1b1b1
+$buttonLight: #5499c7
+$buttonDark: #1a5276
+$buttonShadow: #006f84
+
+// Remove default margins and padding
+*
+  margin: 0 0
+  padding: 0 0
+
+// Only styling on the body should be on background
+body
+  background-image: url(./background.jpg)
+
+// all content on the page is within a single div
+#content
+  width: 15em
+  margin: 20px auto 0 auto
+  padding: 10px 10px
+  text-align: center
+  border: 1px solid $darkFrame
+  background-color: $darkBackground
+
+// Color text in the page header
+header
+  color: $frameFonts
+
+// Title on the page
+header h3
+  margin-bottom: 5px
+
+// Author line
+header h5
+  margin-bottom: 10px
+
+// Remove bullet points on all lists
+article ul
+  list-style-type: none
+
+// The twelve button virtual keypad
+ul.vpad
+  width: 140px
+  height: 190px
+  padding: 3px
+  margin: 0 auto
+  background-color: $lighterBackground
+
+// Default styling for each pad button
+ul.vpad li
+  display: inline-block
+  box-shadow: 0px 2px 0px $buttonShadow
+  margin: 4px 1px 2px 4px
+  padding-top: 8px
+  height: 32px
+  width: 40px
+  font-family: Georgia
+  font-size: 20px
+  font-weight: bold
+  text-align: center
+  color: $frameFonts
+  background-image: linear-gradient( to bottom, $buttonLight, $buttonDark )
+  border-radius: 11px
+  transistion: all ease 0.1s
+  position: relative
+  float: left
+
+// Styling for pressed buttons
+ul.vpad li:active
+  box-shadow: 0px 1px 0px $buttonShadow
+  top: 2px
+  color: $lighterBackground
+
+// Styling the Shift and Del button
+ul.vpad li#del, ul.vpad li#shf
+  font-size: 15px
+  padding-top: 13px
+  height: 27px
+
+// Form styling
+fieldset
+  margin-top: 10px
+  padding: 10px 0
+  background-color: $lighterBackground
+  border: 1px solid $frameFonts
+
+// Default colors for the form text
+fieldset legend
+  color: $frameFonts
+  font-weight: bold
+
+// Add space between input controls in form
+fieldset ul li:first-child
+  margin-bottom: 10px
+
+// Add space on the submit button
+input[type=submit]
+  padding: 4px 4px

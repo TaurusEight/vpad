@@ -1,0 +1,19 @@
+
+Time-stamp: <2016-11-05 23:03:57 daniel>
+
+Virtual Pad - A sample project developed by Daniel Mendyke
+
+Files:
+
+  vpad.html:  Project HTML file.
+  vpad.sass:  Converts to the project CSS file.
+  vpad.js:    Project JavaScript file - using ES6.
+
+Requirements:
+
+  SASS:  CSS template utility.
+
+
+In a browser this project displays a virtual keypad of twelve buttons.  The letters A through J, a shift button and a delete button.  Clicking a letter button adds the letter to the text input field.  The shift button toggles the other buttons between upper case and lower case.  The delete button removes the last letter in the text input field.
+
+Pressing 'Click Me' displays an alert box showing the reverse of the string in the text input control.
