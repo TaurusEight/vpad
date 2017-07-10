@@ -1,5 +1,5 @@
 
-Time-stamp: <2016-11-05 23:03:57 daniel>
+Time-stamp: <2017-07-10 09:51:34 dmendyke>
 
 Virtual Pad - A sample project developed by Daniel Mendyke
 
@@ -11,7 +11,7 @@ Files:
 
 Requirements:
 
-  SASS:  CSS template utility.
+  SASS:  CSS template utility.  [http://sass-lang.com]
 
 
 In a browser this project displays a virtual keypad of twelve buttons.  The letters A through J, a shift button and a delete button.  Clicking a letter button adds the letter to the text input field.  The shift button toggles the other buttons between upper case and lower case.  The delete button removes the last letter in the text input field.
